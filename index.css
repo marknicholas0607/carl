@@ -1,0 +1,73 @@
+@font-face{
+	font-family: carl;
+	src: url('font/Poppins-Regular.ttf');
+}
+*{
+	padding: 0;
+	margin: 0;
+	scroll-behavior: smooth;
+	font-family: carl;
+}
+html, body{
+	height: 100%; 
+}
+
+:root{
+	--red: #dc3545;
+	--white: #ffffff;
+	--black: #000000;
+	--grey: #aaaaaa;
+}
+
+::selection{
+	background-color: var(--black);
+	color: var(--white);
+}
+
+
+nav{
+	border: 1px solid red;
+	padding: 20px;
+	display: flex;
+}
+.nav-left, .nav-right{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.nav-right{
+	margin-left: auto;
+	margin-right: 0;
+	display: flex;
+}
+.nav-right > a{
+	margin-left: 20px;
+}
+#menu, .phone-menu{
+	display: none;
+}
+.carl{
+	height: 100%;
+	width: 100%;
+	border: 1px solid blue;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media(max-width: 768px){
+	nav{
+		padding: 10px;
+	}
+	h1{
+		color: var(--red);
+	}
+	#menu{
+		display: flex;
+	}
+	.nav-right > a{
+		display: none;
+	}
+}
+
+

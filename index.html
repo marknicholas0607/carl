@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Carl Arocha | Web Developer</title>
+	<link rel="icon" type="image/x-icon" href="favicon.png">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="aos.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+	<nav>
+		<div class="nav-left">
+			<h1>Carl Arocha</h1>
+		</div>
+		<div class="nav-right">
+			<a href="#" onclick="phoneMenu();" id="menu">Menu</a><br>
+			<a href="">Home</a><br>
+			<a href="">About</a><br>
+			<a href="">Contact</a><br>
+		</div>
+	</nav>
+	<div class="phone-menu" id="phone-menu">
+		<a href="">Home</a><br>
+		<a href="">About</a><br>
+		<a href="">Contact</a><br>
+	</div>
+
+	<div class="carl" data-aos="fade-up">carl</div>
+
+	<div style="height: 100%; display: flex; justify-content: center; align-items: center;">
+		<div data-aos="fade-down-right" data-aos-duration="1000">hello</div>
+	</div>
+
+	<h1 data-aos="fade-down">Carl</h1>
+
+	<script type="text/javascript">
+		function phoneMenu() {
+			var menu = document.getElementById('phone-menu');
+
+			if (menu.style.display == "block") {
+				menu.style.display = "none";
+			}
+			else{
+				menu.style.display = "block";
+			}
+		}
+
+	</script>
+	<script src="aos.js"></script>
+	<script>
+		AOS.init();
+	</script>
+
+
+</body>
+</html>
